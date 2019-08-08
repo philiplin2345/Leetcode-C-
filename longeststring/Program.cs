@@ -11,7 +11,7 @@ namespace longeststring
             string s = "heuwoqrlaslkslklllsdfjdskcmmdmmmdssdfff";
             stringData sd = LengthOfLongestSubstring(s);
             Console.WriteLine(sd.stringLength);
-            Console.WriteLine(s.Substring(sd.start, sd.stringLength));
+            Console.WriteLine("The longest string is {0}, with a length of {1} characters",s.Substring(sd.start,sd.end), sd.stringLength);
         }
         static stringData LengthOfLongestSubstring(string s)
         {

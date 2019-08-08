@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chemEquilibrium", "chemEquilibrium.csproj", "{4693456C-C406-4392-B379-46EC670A5695}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4693456C-C406-4392-B379-46EC670A5695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4693456C-C406-4392-B379-46EC670A5695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4693456C-C406-4392-B379-46EC670A5695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4693456C-C406-4392-B379-46EC670A5695}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E524207-B8A3-48D9-99D1-E9D3BDD28AA8}
+	EndGlobalSection
+EndGlobal

@@ -48,7 +48,7 @@ namespace kthsmallest
         }
 
     }
-    public class DuplicateKeyComparer<TKey> : IComparer<TKey> where TKey : IComparable
+    public class DuplicateKeyComparer<TKey> : IComparer<TKey>
     {
         public int Compare(TKey x, TKey y)
         {

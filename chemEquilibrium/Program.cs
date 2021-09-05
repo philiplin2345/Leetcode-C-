@@ -20,26 +20,26 @@ namespace chemEquilibrium
             string[] Data = data.Split("=");
             string left = Data[0];
             string right = Data[1];
-            int limitleft = 0, limitright = 0;
+            int limitLeft = 0, limitRight = 0;
             for (int i = 0; i < left.Length; i++)
             {
                 if (Char.IsUpper(left[i]))
-                    limitleft++;
+                    limitLeft++;
             }
             for (int i = 0; i < right.Length; i++)
             {
                 if (Char.IsUpper(right[i]))
-                    limitright++;
+                    limitRight++;
             }
 
             string plus = "+";
             string[] Left = left.Split(plus);
             string[] Right = right.Split(plus);
-            string[] lout = new string[limitleft];
-            double[] lout1 = new double[limitleft];
+            string[] lout = new string[limitLeft];
+            double[] lout1 = new double[limitLeft];
 
-            string[] rout = new string[limitright];
-            double[] rout1 = new double[limitright];
+            string[] rout = new string[limitRight];
+            double[] rout1 = new double[limitRight];
             int lind = 0, rind = 0;
             for (int i = 0; i < Left.Length; i++)
             {
@@ -201,20 +201,20 @@ namespace chemEquilibrium
 
 
             }
-            for (int i = 0; i < limitleft; i++)
+            for (int i = 0; i < limitLeft; i++)
             {
-                for (int j = i + 1; j < limitleft; j++)
+                for (int j = i + 1; j < limitLeft; j++)
                 {
                     if (lout[i]==(lout[j]))
                     {
                         lout1[i] = lout1[i] + lout1[j];
                         lout1[j] = 0;
                         lout[j] = "xyzz";
-                        limitleft--;
+                        limitLeft--;
                     }
                 }
             }
-            int r = limitright;
+            int r = limitRight;
             for (int i = 0; i < r; i++)
             {
                 for (int j = i + 1; j < r; j++)
@@ -224,7 +224,7 @@ namespace chemEquilibrium
                         rout1[i] = rout1[i] + rout1[j];
                         rout1[j] = 0;
                         rout[j] = "xyzz";
-                        limitright--;
+                        limitRight--;
                     }
                 }
             }
@@ -249,4 +249,51 @@ namespace chemEquilibrium
         }
     }
 }
-
+/*
+ * Test 2
+Input:
+s: "1000H2O = Au + Ag"
+Output:
+true
+Expected Output:
+false
+Console Output:
+Empty
+ * 
+ * Input:
+s: "A = B"
+Output:
+true
+Expected Output:
+false
+Console Output:
+Empty
+ * 
+ * Input:
+s: "NH3 + CO2 + H2O = NH4HCO3"
+Output:
+false
+Expected Output:
+true
+Console Output:
+Empty
+ * 
+ * Input:
+s: "2Water + 5Sand = 7Wonders"
+Output:
+true
+Expected Output:
+false
+Console Output:
+Empty
+ * 
+ * Input:
+s: "15Li = 2Li5 + Li + Li + 3Li + ExtraTrash"
+Output:
+true
+Expected Output:
+false
+Console Output:
+Empty
+ * 
+ */
